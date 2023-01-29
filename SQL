@@ -20,7 +20,7 @@ create table users(
     #Add check constraint to column " gender " between 'm' or 'f'.
     gender char(1)check ( gender='m' or gender='f'),
     date_of_birth varchar(15),
-    created_at  datetime default ,
+    created_at  datetime  ,
     country_code int,
     foreign key (country_code) REFERENCES countries(code)
 );
